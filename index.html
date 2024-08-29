@@ -27,18 +27,30 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand"></a>
             <form class="d-flex" role="search">
                 <table>
-                    <tr><td><div class="clock" id="clock"></div>&nbsp;<span id="time" class="time"></span><br></td></tr>
-                    <tr><td><div class="date" id="date"></div></td></tr>
-                </table>              
+                    <tr>
+                        <td>
+                            <div class="clock" id="clock"></div>&nbsp;<span id="time" class="time"></span><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="date" id="date"></div>
+                        </td>
+                    </tr>
+                </table>
             </form>
         </div>
     </nav>
+
+    <div class="alert alert-success" role="alert">
+        Kindly use 123456789 as the Passkey ..!
+    </div>
 
     <div class="main">
         <div class="container maincontainer">
@@ -53,7 +65,7 @@
                     <div class="col-auto">
                         <button type="button" class="btn btn-outline-success" onclick="getInputValue()">
                             <i class="fa-solid fa-right-to-bracket"></i>
-                        </button>                        
+                        </button>
                     </div>
                 </div>
             </center>
