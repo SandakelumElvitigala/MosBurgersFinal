@@ -10,7 +10,7 @@ function getInputValue() {
     if (pass) {
         const name = pass.name;
         
-        window.location.href = `/MosBurgersFinal/home.html?name=${name}`;
+        window.location.href = `/home.html?name=${name}`;
     }
 }
 
