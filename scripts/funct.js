@@ -10,14 +10,14 @@ function getQueryParams() {
 
 function goBack() {
     getQueryParams();
-    // Use the stored userName if needed
+    
     console.log(`Going back for user: ${userName}`);
     window.history.back();
 }
 
 function reDirect(pageUrl) {
     getQueryParams();
-    // Use the stored userName if needed
+    
     console.log(`Redirecting for user: ${userName}`);
     window.location.href = `${pageUrl}?name=${userName}`;
 }
