@@ -33,7 +33,7 @@
 
         <nav class="navbar navbar-custom homenav">
             <div class="container-fluid">
-                <a class="navbar-brand  custom-brand">MOS burgers &nbsp; | <span>Dashboard</span></a>
+                <a class="navbar-brand  custom-brand">MOS burgers &nbsp; | <span>PlaceORder</span></a>
                 <form class="d-flex" role="search">
                     <table>
                         <tr>
@@ -61,123 +61,13 @@
                 </div>
             </div-->
             <div class="row">
-                <div class="col-md-8 contcol">
-                    <div class="row topicrow">
-                        <div class="col topiccol">
-                            <div class="row" style="width: 100%;height: 100%;">
-                                <div class="col" style="align-content: center;">
-                                    <h5>B u r g e r s</h5>
-                                </div>
-                                <div class="col"></div>
-                                <div class="col" style="align-content: center;"><button
-                                        style="margin-left: 95%; background: white;color: rgb(4, 4, 4);font-size: 20px;border-radius: 50%;height: 5vh;width: 5vh;"
-                                        onclick="displayData1();">+</button></div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row itemrow1" id="data-container2">
-
-                    </div>
-                    <div class="row spacerow"></div>
-
-                    <div class="row topicrow">
-                        <div class="col topiccol">
-                            <div class="row" style="width: 100%;height: 100%;">
-                                <div class="col" style="align-content: center;">
-                                    <h5>S u b m a r i n e s</h5>
-                                </div>
-                                <div class="col"></div>
-                                <div class="col" style="align-content: center;"><button
-                                        style="margin-left: 95%; background: white;color: rgb(4, 4, 4);font-size: 20px;border-radius: 50%;height: 5vh;width: 5vh;"
-                                        onclick="displayData2();">+</button></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row itemrow1" id="data-container1">
-
-                    </div>
-                    <div class="row spacerow"></div>
-
-                    <div class="row topicrow">
-                        <div class="col topiccol">
-                            <div class="row" style="width: 100%;height: 100%;">
-                                <div class="col" style="align-content: center;">
-                                    <h5>F r i e s</h5>
-                                </div>
-                                <div class="col"></div>
-                                <div class="col" style="align-content: center;"><button
-                                        style="margin-left: 95%; background: white;color: rgb(4, 4, 4);font-size: 20px;border-radius: 50%;height: 5vh;width: 5vh;"
-                                        onclick="displayData3();">+</button></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row itemrow1" id="data-container3"></div>
-
-                    <div class="row spacerow"></div>
-
-                    <div class="row topicrow">
-                        <div class="col topiccol">
-                            <div class="row" style="width: 100%;height: 100%;">
-                                <div class="col" style="align-content: center;">
-                                    <h5>P a s t a</h5>
-                                </div>
-                                <div class="col"></div>
-                                <div class="col" style="align-content: center;"><button
-                                        style="margin-left: 95%; background: white;color: rgb(4, 4, 4);font-size: 20px;border-radius: 50%;height: 5vh;width: 5vh;"
-                                        onclick="displayData4();">+</button></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row itemrow1" id="data-container4"></div>
-
-                    <div class="row spacerow"></div>
-
-                    <div class="row topicrow">
-                        <div class="col topiccol">
-                            <div class="row" style="width: 100%;height: 100%;">
-                                <div class="col" style="align-content: center;">
-                                    <h5>C h i c k e n</h5>
-                                </div>
-                                <div class="col"></div>
-                                <div class="col" style="align-content: center;"><button
-                                        style="margin-left: 95%; background: white;color: rgb(4, 4, 4);font-size: 20px;border-radius: 50%;height: 5vh;width: 5vh;"
-                                        onclick="displayData5();">+</button></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row itemrow1" id="data-container5"></div>
-
-                    <div class="row spacerow"></div>
-
-                    <div class="row topicrow">
-                        <div class="col topiccol">
-                            <div class="row" style="width: 100%;height: 100%;">
-                                <div class="col" style="align-content: center;">
-                                    <h5>B e v e r a g e s</h5>
-                                </div>
-                                <div class="col"></div>
-                                <div class="col" style="align-content: center;"><button
-                                        style="margin-left: 95%; background: white;color: rgb(4, 4, 4);font-size: 20px;border-radius: 50%;height: 5vh;width: 5vh;"
-                                        onclick="displayData6();">+</button></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row itemrow1" id="data-container6"></div>
-
-                    <div class="row spacerow"></div>
-                </div>
-
-                <div class="col-md-4">
+                <div class="col-lg-6">
                     <div class="box">
                         <div class="row"
                             style="height: 10%;align-content: center;font-family: 'Edu AU VIC WA NT Hand';">
                             <center>
+                                <br>
                                 <h5>C A R T</h5>
                             </center>
                         </div>
@@ -213,20 +103,128 @@
 
                             <table style="height: 100%;width: 100%;">
                                 <tr>
-                                    <td><button class="btn btn-danger" style="height: 95%; width: 99%; margin-left: 5%;"
-                                            id="refreshButton">Cancel</button></td>
-                                    <td>
-                                        <center>Grand Total : <span id="grandTotal"></span></center>
+                                    <td><br><br><button class="btn btn-danger"
+                                            style="height: 95%; width: 99%; margin-left: 5%;"
+                                            id="refreshButton">Cancel</button>
+                                        <br><br>
                                     </td>
-                                    <td align="right"><button class="btn btn-success"
+                                    <td><br><br>
+                                        <center>Grand Total : <span id="grandTotal"></span></center>
+                                        <br><br>
+                                    </td>
+                                    <td align="right"><br><br><button class="btn btn-success"
                                             style="height: 95%; width: 99%;margin-right: 5%;" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop">Proceed</button></td>
+                                            data-bs-target="#staticBackdrop">Proceed</button>
+                                        <br><br>
+                                    </td>
                                 </tr>
                             </table>
 
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-6 contcol">
+                    <div class="row topicrow" style="margin-top: 50px;">
+                        <div class="col topiccol">
+                            <div class="row" style="width: 100%;height: 100%;">
+                                <div class="col" style="align-content: center;">
+                                    <h5>B u r g e r s</h5>
+                                </div>
+                                <div class="col"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row itemrow1" id="data-container2">
+
+                    </div>
+                    <div class="row spacerow"></div>
+
+                    <div class="row topicrow">
+                        <div class="col topiccol">
+                            <div class="row" style="width: 100%;height: 100%;">
+                                <div class="col" style="align-content: center;">
+                                    <h5>S u b m a r i n e s</h5>
+                                </div>
+                                <div class="col"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row itemrow1" id="data-container1">
+
+                    </div>
+                    <div class="row spacerow"></div>
+
+                    <div class="row topicrow">
+                        <div class="col topiccol">
+                            <div class="row" style="width: 100%;height: 100%;">
+                                <div class="col" style="align-content: center;">
+                                    <h5>F r i e s</h5>
+                                </div>
+                                <div class="col"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row itemrow1" id="data-container3"></div>
+
+                    <div class="row spacerow"></div>
+
+                    <div class="row topicrow">
+                        <div class="col topiccol">
+                            <div class="row" style="width: 100%;height: 100%;">
+                                <div class="col" style="align-content: center;">
+                                    <h5>P a s t a</h5>
+                                </div>
+                                <div class="col"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row itemrow1" id="data-container4"></div>
+
+                    <div class="row spacerow"></div>
+
+                    <div class="row topicrow">
+                        <div class="col topiccol">
+                            <div class="row" style="width: 100%;height: 100%;">
+                                <div class="col" style="align-content: center;">
+                                    <h5>C h i c k e n</h5>
+                                </div>
+                                <div class="col"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row itemrow1" id="data-container5"></div>
+
+                    <div class="row spacerow"></div>
+
+                    <div class="row topicrow">
+                        <div class="col topiccol">
+                            <div class="row" style="width: 100%;height: 100%;">
+                                <div class="col" style="align-content: center;">
+                                    <h5>B e v e r a g e s</h5>
+                                </div>
+                                <div class="col"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row itemrow1" id="data-container6"></div>
+
+                    <div class="row spacerow"></div>
+                </div>
+
+
             </div>
         </div>
 
@@ -279,7 +277,7 @@
                 </center>
             </div>
             <div class="col-sm-1">
-                <center><button class="btn btn-outline-light"><i class="fa-regular fa-bell"></i></button></center>
+                <center><button cla ss="btn btn-outline-light"><i class="fa-regular fa-bell"></i></button></center>
             </div>
         </div>
 
@@ -288,7 +286,7 @@
 
     <script src="scripts/clock.js"></script>
     <script src="scripts/funct.js"></script>
-    
+
     <script src="jsArrays/burgers.js"></script>
     <script src="jsArrays/submarines.js"></script>
     <script src="jsArrays/fries.js"></script>
