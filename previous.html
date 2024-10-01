@@ -57,7 +57,7 @@
         <div class="cont" style="height: 68vh;">
             <div class="row" style="width: 100%;height: 100%;">
                 <div class="col-md-4" style="height: 100%;">
-                    <div class="box">
+                    <div class="box" style="margin-left: 10px;">
                         <div class="row" style="height: auto;align-content: center;">
                             <center>
                                 <h5 id="titleDiv"><strong>R E C E N T order</strong></h5>
@@ -119,114 +119,35 @@
                 </div>
 
                 <div class="col-md-8">
-                    <div class="row" style="width: 100%;height: 13%;">
-                        <div class="col">
-                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
-                                    onclick="timeSorting()">
-                                <label class="btn btn-outline-primary" for="btnradio1">Filter by Time&nbsp;|&nbsp;<i
-                                        class="fa-solid fa-arrow-up"></i></label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
-                                    onclick="valueView()">
-                                <label class="btn btn-outline-primary" for="btnradio2">Filter by Value&nbsp;|&nbsp;<i
-                                        class="fa-solid fa-arrow-down"></i></label>
-
-                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
-                                    onclick="defaultView()" checked>
-                                <label class="btn btn-outline-primary" for="btnradio3">Default View</label>
-                            </div>
+                    <center>
+                        <table>
+                            <tr>
+                                <td><button class="btn btn-success" onclick="defaultView()">Newest To
+                                        Oldest</button>&nbsp;&nbsp;</td>
+                                <td><button class="btn btn-success" onclick="oldToNew()">Oldest To
+                                        Newest</button>&nbsp;&nbsp;</td>
+                                <td><button class="btn btn-success" onclick="valueOrder()">Decending with Value</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                    </center>
+                    <center>
+                        <div style="overflow-x: auto; height: 30vh; overflow-y: auto; width: 95%; color: white;">
+                            <table style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th><center>&nbsp;&nbsp;Customer Name&nbsp;&nbsp;</center></th>
+                                        <th><center>&nbsp;&nbsp;Customer Contact&nbsp;&nbsp;</center></th>
+                                        <th><center>&nbsp;&nbsp;Order Value&nbsp;&nbsp;</center></th>
+                                        <th><center>&nbsp;&nbsp;Ordered at&nbsp;&nbsp;</center></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbdy">
+                                </tbody>
+                            </table>
                         </div>
-
-                        <div class="col"
-                            style="display: flex; align-items: center; justify-content: center;height: 100%;">
-                            <div class="input-group mb-3" style="align-items: center;">
-                                <input type="text" class="form-control" placeholder="Search by Invoice Number"
-                                    aria-label="Recipient's username" aria-describedby="button-addon2" id="searchId">
-                                <button class="btn btn-outline-success" type="button" id="button-addon2"
-                                    onclick="searchOrder()">Search</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="row" id="orders" class="tcont" style="height: 45%; z-index: 1;">
-
-                        <table style="height: 85%;width: 100%;background: #00000089; color: white;" id="sort">
-                            <thead style="background: #000;height: 50px;width: 100%;">
-                                <th>
-                                    <center>Invoice Number<br></center>
-                                </th>
-                                <th>
-                                    <center>Customer Name<br></center>
-                                </th>
-                                <th>
-                                    <center>Customer Contact<br></center>
-                                </th>
-                                <th>
-                                    <center>Grand Total<br></center>
-                                </th>
-                                <th>
-                                    <center>Date and Time<br></center>
-                                </th>
-                                <th>
-                                    <center>Action<br></center>
-                                </th>
-                            </thead>
-                            <tbody style="overflow-y: scroll; height: 80%;background: #00000030;color: white;" id="default"></tbody>
-                        </table>
-
-                        <table style="height: 85%;width: 100%;background: #00000089; color: white;display: none;"
-                            id="val">
-                            <thead style="background: #fefdfd69;height: 50px;color: #000;width: 100%;">
-                                <th>
-                                    <center>Invoice Number<br></center>
-                                </th>
-                                <th>
-                                    <center>Customer Name<br></center>
-                                </th>
-                                <th>
-                                    <center>Customer Contact<br></center>
-                                </th>
-                                <th>
-                                    <center>Grand Total<br></center>
-                                </th>
-                                <th>
-                                    <center>Date and Time<br></center>
-                                </th>
-                                <th>
-                                    <center>Action<br></center>
-                                </th>
-                            </thead>
-                            <tbody style="overflow-y: scroll; height: 80%;background: #00000030;color: white;" id="value"></tbody>
-                        </table>
-
-                        <table style="height: 85%;width: 100%;background: #00000089; color: white;display: none;"
-                            id="tim">
-                            <thead style="background: #000;height: 50px;width: 100%;">
-                                <th>
-                                    <center>Invoice Number<br></center>
-                                </th>
-                                <th>
-                                    <center>Customer Name<br></center>
-                                </th>
-                                <th>
-                                    <center>Customer Contact<br></center>
-                                </th>
-                                <th>
-                                    <center>Grand Total<br></center>
-                                </th>
-                                <th>
-                                    <center>Date and Time<br></center>
-                                </th>
-                                <th>
-                                    <center>Action<br></center>
-                                </th>
-                            </thead>
-                            <tbody style="overflow-y: scroll; height: 80%;background: #00000030;color: white;" id="timeSort"></tbody>
-                        </table>
-
-
-                    </div>
+                    </center>
                 </div>
             </div>
         </div>
@@ -305,11 +226,10 @@
     <script src="scripts/clock.js"></script>
     <script src="scripts/funct.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.6.0/jspdf.umd.min.js"></script>
-    <script src="scripts/defaultView.js"></script>
-    <script src="scripts/sortByTime.js"></script>
-    <script src="scripts/valueSort.js"></script>
     <script src="scripts/recent.js"></script>
-    <script src="scripts/searchById.js"></script>
+    <script src="jsArrays/orders.js"></script>
+    <script src="scripts/viewOrder.js"></script>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
